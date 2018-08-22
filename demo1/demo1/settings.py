@@ -106,3 +106,9 @@ REDIS_HOST = '10.8.164.169'
 REDIS_PORT = 6379
 
 
+# 使用scrapy-redis组件的去重对列
+DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+# 使用scrapy-redis自己的调度器
+SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+# 是否允许暂停
+SCHEDULER_PERSIST = True
